@@ -1,0 +1,77 @@
+
+.team {
+    background: url("http://cheaphostings.org/html/item-lalvai/lalvai/assets/img/bg/testimonial-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+
+    .team__wrap {
+      .team__slider {
+        white-space: nowrap;
+        overflow-y: hidden;
+        cursor: grab;
+
+        &:active {
+          cursor: grabbing;
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .slider__item {
+          display: inline-block;
+
+          .dflex {
+            flex-wrap: wrap;
+          }
+
+          .info {
+            text-align: center;
+            margin: 20px 0;
+
+            img {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              position: relative;
+              box-shadow: 0 0 0 10px #3e3e44;
+            }
+          }
+
+          .quote {
+            margin: 20px 0;
+            position: relative;
+            padding: 15px 10px;
+            border: 1px solid rgba(255, 255, 255, 0.548);
+            white-space: initial;
+
+            &:before {
+              position: absolute;
+              content: "";
+              left: 0;
+              top: 20%;
+              width: 0;
+              height: 0;
+              transform: translateX(-100%);
+              border-top: 10px solid transparent;
+              border-bottom: 10px solid transparent;
+              border-right: 10px solid rgba(255, 255, 255, 0.548);
+
+              @media (max-width: 768px) {
+                left: 50%;
+                top: 0;
+                width: 0;
+                height: 0;
+                transform: translate(-50%, -100%);
+                border-right: 10px solid transparent;
+                border-left: 10px solid transparent;
+                border-bottom: 10px solid rgba(255, 255, 255, 0.548);
+              }
+            }
+          }
+        }
+      }
+    }
+  }

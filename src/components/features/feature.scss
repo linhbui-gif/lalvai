@@ -1,0 +1,44 @@
+$green: #35ac39;
+.features {
+    padding: 6rem 0;
+    .features__wrap {
+        text-align: center;
+        .features__content {
+            text-align: left;
+            margin-top: 5rem;
+            flex-wrap: wrap;
+            .features__item {
+                align-items: flex-start;
+                margin: 20px 0;
+                .icon {
+                    padding: 0;
+                    flex: 2 2 80px;
+                    border: 2px dashed $green;
+                    border-radius: 50%;
+                    height: 8.0rem;
+                    max-width: 8.0rem;
+                    position: relative;
+                    background: $green;
+                    color: #fff;
+                    font-size: 3rem;
+
+                    &:before {
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        position: absolute;
+                        content: '';
+                        transform: scale(1.3);
+                        border: 1px solid #eee;
+                    }
+                }
+                .content {
+                    flex: 1;
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+}

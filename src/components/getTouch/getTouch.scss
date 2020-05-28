@@ -1,0 +1,44 @@
+$green: #35ac39;
+.get {
+    background: url('http://cheaphostings.org/html/item-lalvai/lalvai/assets/img/bg/contact-bg.jpg');    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    h1 {
+        color: #fff;
+    }
+    .get__wrap {
+        text-align: center;
+        flex-direction: column;
+        form {
+            margin-top: 5rem;
+            flex-direction: column;
+            padding: 6rem;
+            border: 2px solid $green;
+            border-radius: 10px;
+            background: #fff;
+
+            .dflex {
+                justify-content: space-between;
+                padding: 0;
+                flex-wrap: wrap;
+            }
+            input,
+             textarea{
+                margin: 10px 0;
+            }
+
+            button {
+                background: #35ac39;
+                border-radius: 3rem;
+                color: #fff;
+                display: inline-block;
+                font-size: 1.6rem;
+                letter-spacing: 0.5px;
+                outline: none;
+                padding: 1.5rem 2.7rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

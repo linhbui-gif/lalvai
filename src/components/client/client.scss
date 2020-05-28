@@ -1,0 +1,23 @@
+.client {
+    padding: 3rem 0;
+
+    .client__wrap {
+        flex-wrap: wrap;
+
+        .client__item {
+            cursor: pointer;
+            text-align: center;
+            margin: 20px 0;
+
+            img {
+                opacity: 0.5;
+            }
+
+            &:hover {
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

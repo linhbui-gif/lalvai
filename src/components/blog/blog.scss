@@ -1,0 +1,66 @@
+.blog {
+    background: #f5f8fa;
+    padding: 6rem 0;
+    .blog__wrap {
+        text-align: center;
+        .blog__items {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .blog__item {
+                background: #fff;
+                margin: 20px 0;
+                .blog__image {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    .blog__overlay {
+                        position: absolute;
+                        bottom: 2rem;
+                        left: 4rem;
+                        background: #35ac39;
+                        color: #fff;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        font-size: 14px;
+                    }
+                }
+                .blog__content {
+                    padding: 2.5rem;
+                    text-align: left;
+                    .date {
+                        font-size: 14px;
+                        color: #35ac39;
+                        display: inline-block;
+                        padding: 0 1rem;
+                        border-right: 1px solid #ccc;
+                        .svg-inline--fa {
+                            margin: 0 5px 0 0;
+                        }
+                    }
+                    .heading {
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        display: block;
+                    }
+                    .des {
+                        margin: 10px 0;
+                    }
+                    .read {
+                        display: block;
+                        font-size: 14px;
+                        padding: 10px 0 0;
+                        border-top: 1px solid #ccc;
+                        text-transform: uppercase;
+                        color: #252d35;
+                        &:hover {
+                            color: #35ac39;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

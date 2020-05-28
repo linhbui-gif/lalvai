@@ -1,0 +1,89 @@
+$green: #35ac39;
+.lastest {
+    padding-bottom: 4rem;
+    .lastest__wrap {
+        text-align: center;
+
+        .lastest__content {
+            margin-top: 5rem;
+            white-space: nowrap;
+            overflow-y: hidden;
+            cursor: grab;
+
+            &:active {
+                cursor: grabbing;
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .lastest__item {
+                display: inline-block;
+                padding: 0 15px;
+                &:hover {
+                    .lastest__image {
+                        img {
+                            transform: scale(1.2);
+                        }
+
+                        .image__overlay {
+                            opacity: 1;
+                            transform: scale(1);
+
+                            .svg-inline--fa {
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+                }
+
+                .lastest__image {
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        transition: .3s ease-out;
+                        display: block;
+                    }
+
+                    .image__overlay {
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                        right: 15px;
+                        bottom: 15px;
+                        background: #35ac398a;
+                        opacity: 0;
+                        transform: scale(1.2);
+                        transition: .3s ease-out;
+
+                        .svg-inline--fa {
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            background: $green;
+                            color: #fff;
+                            font-size: 18px;
+                            text-align: center;
+                            border-radius: 50%;
+                            position: relative;
+                            transition: .3s ease-out;
+                            opacity: 0;
+                            transform: translateY(-100px);
+                        }
+                    }
+                }
+
+                .item__content {
+                    margin-top: -5px;
+                    background: #fff;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

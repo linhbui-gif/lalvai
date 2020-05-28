@@ -1,0 +1,45 @@
+$green: #35ac39;
+.checkout {
+    .checkout__wrap {
+        flex-wrap: wrap;
+
+        .checkout__item {
+            margin: 20px 0;
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+            a.btn {
+                background: #35ac39;
+                color: #fff;
+                display: inline-block;
+                font-size: 1.4rem;
+                padding: 1rem 3rem;
+                text-transform: capitalize;
+                border-radius: 50px;
+            }
+            &.video {
+                position: relative;
+
+                .buttonVideo {
+                    position: absolute;
+                    top: 20%;
+                    left: 1rem;
+                    width: 9rem;
+                    height: 9rem;
+                    border-radius: 50%;
+                    background: $green;
+                    color: #fff;
+                    font-size: 30px;
+                    box-shadow: 0 0 0 15px #eee;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

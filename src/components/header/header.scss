@@ -1,0 +1,109 @@
+.nav {
+    position: relative;
+    padding: 3rem 0;
+    z-index: 100;
+
+    &.fixed {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        background: #fff;
+        width: 100%;
+        animation: nav 1s ease-out forwards;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+        @keyframes nav {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .nav__button {
+            i {
+                color: #000;
+            }
+        }
+        .nav__menu {
+
+            .link {
+                color: #252d35!important;
+
+                &:hover {
+                    color: #35ac39!important;
+                }
+            }
+        }
+        .logo-hidden{
+            display: block!important;
+        }
+        img{
+            display: none;
+        }
+        .nav__logo{display: none;}
+        .nav__button .svg-inline--fa{
+            color: black;
+        }
+    }
+
+    .nav__wrap {
+        position: relative;
+        justify-content: space-between;
+
+        .nav__logo,.nav__logos {
+            img {
+                width: 150px;
+            }
+            .logo-hidden{
+                display: none;
+            }
+        }
+
+        .nav__menu {
+            @media (max-width:768px) {
+                position: absolute;
+                display: block;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                padding: 20px;
+                overflow: hidden;
+                max-height: 0;
+                transition: .3s ease-in-out;
+                padding: 0 20px;
+
+                &.open {
+                    max-height: 100vh;
+                    padding: 20px;
+                }
+            }
+
+            .link {
+                padding: 0 10px;
+
+                @media (max-width:768px) {
+                    display: block;
+                    width: 100%;
+                    padding: 10px 0;
+                    color: #252d35;
+
+                    &:hover {
+                        color: #35ac39;
+                    }
+                }
+            }
+        }
+
+        .nav__button {
+            display: none;
+
+            @media (max-width:768px) {
+                display: flex;
+                color: #fff;
+                cursor: pointer;
+                font-size: 24px;
+            }
+        }
+    }
+}

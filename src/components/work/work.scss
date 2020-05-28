@@ -1,0 +1,44 @@
+$green: #35ac39;
+.work {
+    background: #f5f8fa;
+    text-align: center;
+    padding: 6rem 0;
+    .work__wrap {
+        .work__content {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .work__item {
+                padding: 6rem;
+                background: #fff;
+                transition: .3s ease-out;
+                margin: 20px 0;
+
+                &:hover {
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                    transform: translateY(-10px);
+                }
+
+                .svg-inline--fa {
+                    font-size: 6rem;
+                }
+
+                h4 {
+                    margin: 10px 0;
+                }
+
+                &.green {
+                    background: $green;
+
+                    .svg-inline--fa {
+                        color: #fff;
+                    }
+
+                    h4 {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
